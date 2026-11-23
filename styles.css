@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 100 900;
@@ -79,13 +79,13 @@ section + section::before {
 
 /* ---------- Header ---------- */
 .top { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--indigo) 94%, transparent); backdrop-filter: blur(8px); border-bottom: 2px dashed rgb(244 241 234 / .18); }
-.top-in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.25rem; }
+.top-in { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 3.5rem; }
 .mark { font-stretch: 125%; font-weight: 900; font-size: 1.5rem; letter-spacing: -.02em; text-decoration: none; display: inline-flex; align-items: baseline; gap: .5rem; }
 .mark span { font-stretch: 75%; font-weight: 600; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; opacity: .8; }
 .top nav { display: flex; align-items: center; gap: clamp(.75rem, 2.5vw, 2rem); font-stretch: 80%; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; font-size: .875rem; }
 .top nav a { text-decoration: none; padding: .5rem 0; }
 .top nav a:hover { text-decoration: underline; text-decoration-style: dashed; }
-.top nav .nav-cta { background: var(--maiz); color: var(--indigo-ink); padding: .6rem 1rem; border-radius: 3px; }
+.top nav .nav-cta { background: var(--maiz); color: var(--indigo-ink); padding: .45rem .9rem; border-radius: 3px; }
 .top nav .nav-cta:hover { text-decoration: none; background: var(--crudo); }
 @media (max-width: 640px) { .top nav a:not(.nav-cta) { display: none; } .mark span { display: none; } }
 
@@ -199,6 +199,6 @@ h1 { font-stretch: 115%; font-weight: 900; font-size: clamp(2.6rem, 6.4vw, 5.4re
 html { scrollbar-color: var(--maiz) var(--indigo-ink); }
 
 /* logo */
-.mark img { display: block; height: 46px; width: auto; }
+.mark img { display: block; height: 38px; width: auto; }
 .mark-foot { display: block; height: 38px; width: auto; }
-@media (max-width: 640px) { .mark img { height: 40px; } }
+@media (max-width: 640px) { .mark img { height: 34px; } }
