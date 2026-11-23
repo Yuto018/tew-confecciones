@@ -197,3 +197,8 @@ h1 { font-stretch: 115%; font-weight: 900; font-size: clamp(2.6rem, 6.4vw, 5.4re
 
 /* custom scrollbar */
 html { scrollbar-color: var(--maiz) var(--indigo-ink); }
+
+/* logo */
+.mark img { display: block; height: 46px; width: auto; }
+.mark-foot { display: block; height: 38px; width: auto; }
+@media (max-width: 640px) { .mark img { height: 40px; } }
