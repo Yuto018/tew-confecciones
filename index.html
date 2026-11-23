@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1E2A5A">
 <link rel="icon" type="image/svg+xml" href="logos/final/icono.svg">
 <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 
@@ -57,8 +57,8 @@
 
       <div class="rack" role="presentation">
         <svg class="cone" style="color:#F4F1EA" data-cone="crudo"><use href="#cone"/></svg>
-        <svg class="cone" style="color:#F2A818" data-cone="maiz"><use href="#cone"/></svg>
-        <svg class="cone" style="color:#C8362B" data-cone="granate" data-thread="start"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#F2A818" data-cone="maiz" data-thread="start"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#C8362B" data-cone="granate"><use href="#cone"/></svg>
         <svg class="cone" style="color:#1F6B5A" data-cone="pino"><use href="#cone"/></svg>
         <svg class="cone" style="color:#7FA7D9" data-cone="celeste"><use href="#cone"/></svg>
         <svg class="cone" style="color:#2B2B2B" data-cone="negro"><use href="#cone"/></svg>
@@ -73,12 +73,12 @@
 
       <fieldset class="chips">
         <legend>Prenda</legend>
-        <label><input type="radio" name="prenda" value="Polos" data-color="#F2A818" checked><span>Polos</span></label>
-        <label><input type="radio" name="prenda" value="Camisas" data-color="#7FA7D9"><span>Camisas</span></label>
-        <label><input type="radio" name="prenda" value="Casacas" data-color="#1F6B5A"><span>Casacas</span></label>
-        <label><input type="radio" name="prenda" value="Pantalones" data-color="#2B2B2B"><span>Pantalones</span></label>
-        <label><input type="radio" name="prenda" value="Buzos" data-color="#C8362B"><span>Buzos</span></label>
-        <label><input type="radio" name="prenda" value="Uniformes" data-color="#E9DFC9"><span>Uniformes</span></label>
+        <label><input type="radio" name="prenda" value="Polos" data-color="#F2A818" data-cone="maiz" checked><span>Polos</span></label>
+        <label><input type="radio" name="prenda" value="Camisas" data-color="#7FA7D9" data-cone="celeste"><span>Camisas</span></label>
+        <label><input type="radio" name="prenda" value="Casacas" data-color="#1F6B5A" data-cone="pino"><span>Casacas</span></label>
+        <label><input type="radio" name="prenda" value="Pantalones" data-color="#2B2B2B" data-cone="negro"><span>Pantalones</span></label>
+        <label><input type="radio" name="prenda" value="Buzos" data-color="#C8362B" data-cone="granate"><span>Buzos</span></label>
+        <label><input type="radio" name="prenda" value="Uniformes" data-color="#F4F1EA" data-cone="crudo"><span>Uniformes</span></label>
       </fieldset>
 
       <div class="row2">
@@ -208,6 +208,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=5"></script>
+<script src="main.js?v=6"></script>
 </body>
 </html>

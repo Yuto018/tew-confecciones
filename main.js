@@ -19,6 +19,13 @@ function pickColor() {
   const r = radios.find((x) => x.checked);
   root.style.setProperty("--thread", r.dataset.color);
   lot.textContent = String(radios.indexOf(r) + 1).padStart(2, "0");
+  // the thread now leaves the cone of the chosen colour
+  document.querySelectorAll(".cone").forEach((c) => {
+    const on = c.dataset.cone === r.dataset.cone;
+    c.classList.toggle("active", on);
+    if (on) c.setAttribute("data-thread", "start"); else c.removeAttribute("data-thread");
+  });
+  if (window.__threadReady) { build(); setTimeout(build, 650); } // again once the cone has lifted
 }
 radios.forEach((r) => r.addEventListener("change", pickColor));
 pickColor();
@@ -80,6 +87,7 @@ function build() {
     [px, py] = [x, y];
   }
   paths.forEach((p) => p.setAttribute("d", d));
+  window.__threadReady = true;
   len = paths[1].getTotalLength();
   paths.forEach((p) => (p.style.strokeDasharray = `${len} ${len}`));
   draw();

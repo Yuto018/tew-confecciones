@@ -98,7 +98,7 @@ h1 { font-stretch: 115%; font-weight: 900; font-size: clamp(2.6rem, 6.4vw, 5.4re
 
 .rack { margin-top: clamp(2.5rem, 5vw, 4rem); display: flex; align-items: flex-end; gap: clamp(.5rem, 1.6vw, 1.25rem); padding-bottom: 14px; border-bottom: 6px solid var(--carton); max-width: 560px; }
 .cone { width: clamp(44px, 7vw, 76px); aspect-ratio: 1 / 2; flex: none; filter: drop-shadow(0 10px 12px rgb(0 0 0 / .3)); transition: transform .6s var(--ease); }
-.cone:nth-child(even) { transform: translateY(-4px); }
+.cone.active { transform: translateY(-10px); }
 
 /* ---------- Quote: a cone label ---------- */
 .label { background: var(--crudo); color: var(--indigo-ink); border-radius: 6px; padding: clamp(1.25rem, 2.5vw, 2rem); position: relative; box-shadow: 0 24px 48px -18px rgb(0 0 0 / .55); }
