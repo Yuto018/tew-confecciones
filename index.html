@@ -1,0 +1,212 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEW Confecciones · Confección de prendas para marcas y empresas</title>
+<meta name="description" content="TEW Confecciones produce prendas por pedido para marcas y empresas: polos, camisas, casacas, pantalones, buzos y uniformes. Cotiza tu pedido por WhatsApp.">
+<meta name="theme-color" content="#1E2A5A">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <pattern id="wrap" width="6" height="3" patternUnits="userSpaceOnUse">
+      <rect y="2.2" width="6" height=".8" fill="#000" opacity=".16"/>
+    </pattern>
+    <linearGradient id="shade" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset=".35" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".8" stop-color="#000" stop-opacity=".18"/>
+    </linearGradient>
+    <symbol id="cone" viewBox="0 0 80 160">
+      <rect x="35" y="0" width="10" height="16" rx="2" fill="#E9DFC9"/>
+      <path d="M30 14h20l22 128H8z" fill="currentColor"/>
+      <path d="M30 14h20l22 128H8z" fill="url(#wrap)"/>
+      <path d="M30 14h20l22 128H8z" fill="url(#shade)"/>
+      <rect x="4" y="140" width="72" height="14" rx="3" fill="#E9DFC9"/>
+      <rect x="4" y="150" width="72" height="4" rx="2" fill="#000" opacity=".12"/>
+    </symbol>
+  </defs>
+</svg>
+
+<svg class="thread" id="thread" aria-hidden="true"><path class="thread-shadow"/><path class="thread-core"/></svg>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="mark" href="#inicio" aria-label="TEW Confecciones, inicio">TEW<span>Confecciones</span></a>
+    <nav aria-label="Principal">
+      <a href="#prendas">Prendas</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#ficha">Producción</a>
+      <a class="nav-cta" href="#cotizar">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+<section class="hero field-indigo">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <h1>Confeccionamos la ropa de tu&nbsp;marca.</h1>
+      <p class="lede">Producción de prendas por pedido para marcas y empresas. Del molde a la caja, en nuestro propio taller.</p>
+
+      <div class="rack" role="presentation">
+        <svg class="cone" style="color:#F4F1EA" data-cone="crudo"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#F2A818" data-cone="maiz"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#C8362B" data-cone="granate" data-thread="start"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#1F6B5A" data-cone="pino"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#7FA7D9" data-cone="celeste"><use href="#cone"/></svg>
+        <svg class="cone" style="color:#2B2B2B" data-cone="negro"><use href="#cone"/></svg>
+      </div>
+    </div>
+
+    <form class="label quote" id="cotizar" aria-labelledby="q-title">
+      <div class="label-head">
+        <h2 id="q-title">Cotiza tu pedido</h2>
+        <span class="lot" aria-hidden="true">HILO&nbsp;<b id="order-no">01</b></span>
+      </div>
+
+      <fieldset class="chips">
+        <legend>Prenda</legend>
+        <label><input type="radio" name="prenda" value="Polos" data-color="#F2A818" checked><span>Polos</span></label>
+        <label><input type="radio" name="prenda" value="Camisas" data-color="#7FA7D9"><span>Camisas</span></label>
+        <label><input type="radio" name="prenda" value="Casacas" data-color="#1F6B5A"><span>Casacas</span></label>
+        <label><input type="radio" name="prenda" value="Pantalones" data-color="#2B2B2B"><span>Pantalones</span></label>
+        <label><input type="radio" name="prenda" value="Buzos" data-color="#C8362B"><span>Buzos</span></label>
+        <label><input type="radio" name="prenda" value="Uniformes" data-color="#E9DFC9"><span>Uniformes</span></label>
+      </fieldset>
+
+      <div class="row2">
+        <label class="field">
+          <span>Cantidad aproximada</span>
+          <input type="number" name="cantidad" inputmode="numeric" min="1" step="1" placeholder="Ej. 500">
+        </label>
+        <label class="field">
+          <span>Empresa o marca</span>
+          <input type="text" name="empresa" autocomplete="organization" placeholder="Nombre de tu marca">
+        </label>
+      </div>
+      <label class="field">
+        <span>Detalle <i>(opcional)</i></span>
+        <input type="text" name="detalle" placeholder="Tela, colores, tallas, fecha que necesitas">
+      </label>
+
+      <p class="error" id="q-error" role="alert" hidden></p>
+
+      <button class="btn btn-send" type="submit">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5 5.3 15A8 8 0 1 1 9 18.7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        Enviar por WhatsApp
+      </button>
+      <p class="fine">Se abre WhatsApp con tu pedido ya escrito. Tú decides si lo envías.</p>
+    </form>
+  </div>
+</section>
+
+<section class="field-maiz" id="prendas" aria-labelledby="p-title">
+  <div class="wrap">
+    <div class="sec-head" data-thread="right">
+      <h2 id="p-title">Lo que sale de nuestras máquinas</h2>
+      <p>Producimos con tu diseño, tu tela o la nuestra. Cada línea de producción lleva su propio hilo.</p>
+    </div>
+
+    <ul class="spools">
+      <li>
+        <svg class="mini" style="color:#F2A818"><use href="#cone"/></svg>
+        <div><h3>Polos y camisetas</h3><p>Cuello redondo, cuello V, piqué, manga larga. Estampado o bordado.</p></div>
+        <span class="code">HILO&nbsp;01</span>
+      </li>
+      <li>
+        <svg class="mini" style="color:#7FA7D9"><use href="#cone"/></svg>
+        <div><h3>Camisas y blusas</h3><p>Oxford, popelina, denim liviano. Para oficina o para tu colección.</p></div>
+        <span class="code">HILO&nbsp;02</span>
+      </li>
+      <li>
+        <svg class="mini" style="color:#1F6B5A"><use href="#cone"/></svg>
+        <div><h3>Casacas y chaquetas</h3><p>Cortavientos, acolchadas, de drill. Con forro y cierres a elección.</p></div>
+        <span class="code">HILO&nbsp;03</span>
+      </li>
+      <li>
+        <svg class="mini" style="color:#2B2B2B"><use href="#cone"/></svg>
+        <div><h3>Pantalones y joggers</h3><p>Drill, gabardina, french terry. Tallas regulares y especiales.</p></div>
+        <span class="code">HILO&nbsp;04</span>
+      </li>
+      <li>
+        <svg class="mini" style="color:#C8362B"><use href="#cone"/></svg>
+        <div><h3>Buzos y polerones</h3><p>Con capucha, cuello redondo, frisa o french terry.</p></div>
+        <span class="code">HILO&nbsp;05</span>
+      </li>
+      <li>
+        <svg class="mini" style="color:#E9DFC9"><use href="#cone"/></svg>
+        <div><h3>Uniformes corporativos</h3><p>Para empresas, colegios, restaurantes y equipos de trabajo.</p></div>
+        <span class="code">HILO&nbsp;06</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="field-granate" id="proceso" aria-labelledby="pr-title">
+  <div class="wrap">
+    <div class="sec-head" data-thread="left">
+      <h2 id="pr-title">Un pedido, una sola costura</h2>
+      <p>Así avanza tu orden por el taller. Sabes en qué paso está en todo momento.</p>
+    </div>
+
+    <ol class="steps" id="steps">
+      <li><span class="n">1</span><h3>Ficha técnica</h3><p>Revisamos tu diseño, medidas y tallas, o lo armamos contigo.</p></li>
+      <li><span class="n">2</span><h3>Muestra</h3><p>Confeccionamos una prenda de prueba para que la apruebes.</p></li>
+      <li><span class="n">3</span><h3>Corte</h3><p>Tendido y corte de la tela según el molde aprobado.</p></li>
+      <li><span class="n">4</span><h3>Confección</h3><p>Costura en línea de producción, prenda por prenda.</p></li>
+      <li><span class="n">5</span><h3>Acabado</h3><p>Control de calidad, planchado, etiquetado y doblado.</p></li>
+      <li data-thread="mid"><span class="n">6</span><h3>Entrega</h3><p>Empacado por talla y modelo, listo para tu tienda o tu equipo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="field-pino" id="ficha" aria-labelledby="f-title">
+  <div class="wrap ficha-in">
+    <div class="sec-head" data-thread="right">
+      <h2 id="f-title">Ficha de producción</h2>
+      <p>Lo que necesitas saber antes de hacer tu pedido.</p>
+    </div>
+    <dl class="spec">
+      <div><dt>Pedido mínimo</dt><dd><span class="ph">[por confirmar] prendas por modelo</span></dd></div>
+      <div><dt>Capacidad mensual</dt><dd><span class="ph">[por confirmar] prendas</span></dd></div>
+      <div><dt>Plazo habitual</dt><dd><span class="ph">[por confirmar] días desde la aprobación de la muestra</span></dd></div>
+      <div><dt>Servicio</dt><dd>Confección completa o solo costura (servicio de maquila)</dd></div>
+      <div><dt>Taller</dt><dd><span class="ph">[Dirección, ciudad]</span></dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="close field-crudo" aria-labelledby="c-title">
+  <div class="wrap close-in">
+    <h2 id="c-title" data-thread="end">¿Tienes un pedido en&nbsp;mente?</h2>
+    <p>Cuéntanos qué prenda, cuántas unidades y para cuándo. Te respondemos con una propuesta de precio y plazo.</p>
+    <div class="close-actions">
+      <a class="btn btn-ink" href="#cotizar">Cotizar mi pedido</a>
+      <a class="btn btn-line" id="wa-direct" href="#">Escribir por WhatsApp</a>
+    </div>
+    <ul class="contact">
+      <li><span>WhatsApp</span><b class="ph">[+51 900 000 000]</b></li>
+      <li><span>Correo</span><b class="ph">[ventas@tewconfecciones.com]</b></li>
+      <li><span>Horario</span><b class="ph">[Lun a sáb, 8:00 a 18:00]</b></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span class="mark small">TEW<span>Confecciones</span></span>
+    <span>© <span id="yr">2026</span> TEW Confecciones</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
